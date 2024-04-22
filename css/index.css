@@ -1,3 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+/*------------ HEADER ---------------*/
+
+header nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: center;
+}
+
+header nav .logo {
+    width: 50px;
+}
+
+header nav input{
+    height: 35px;
+    border: 1px solid #D2D2D2;
+    padding-left: 5px;
+    border-radius: 5px;
+    background-image: url(../assets/img/icone-busca.svg);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 150px;
+    background-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+header nav input:hover{
+    border-color:  #000;
+    transition: 0.5s;
+    
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav ul li a{
+    margin: 5px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover{
+    border-bottom: 1px solid #000;
+    
+    
+}
+
+
+/*------------ MAIN ---------------*/
+main{
+    padding-right: 150px;
+    padding-left: 150px;
+}
+
+
+/*----------- BANNER -----------*/
+
+.banner{
+    position: relative;
+}
+
+.banner img{
+    width: 100%;
+    
+}
+
+ .banner .texto-banner{
+    position: absolute;
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+    
+    width: 45%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -115%);
+    text-align: start;
+}
+
+ .banner .texto-banner h1{
+    font-size: 45px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    
+}
+.banner .texto-banner p{
+    text-align: justify;
+    font-weight: 300;
+    
+}
+
+
+/*------------ BENEFICIOS ---------------*/
+
+main .beneficios{
+    display: flex;
+    justify-content: center;
+    
+}
+
+main .beneficios .beneficio{
+    display: flex;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    padding: 15px;
+}
+
+
+/*------------ SERVIÇOS --------------*/
+
+main .servicos{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    align-items: center;
+    
+}
+
+main .servicos .caixa-servico{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+}
+main .servicos .caixa-servico .servico{
+    margin-bottom: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s; /* Adiciona transição para o efeito de escala */
+}
+
+main .servicos .caixa-servico .servico:hover {
+    transform: scale(1.1); /* Aumenta a escala em 10% ao passar o mouse */
+}
+main .servicos .caixa-servico .servico p{
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+    color: #fff;
+    white-space: nowrap; /* Evita que o texto seja quebrado */
+}
+main .servicos .caixa-servico .servico img{
+    border-radius: 10px;
+}
+
+main .servicos h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+main .servicos button{
+    background-color: transparent;
+    font-family: 'Inter', sans-serif;
+    width: 95px;
+    /* padding: 0px; */
+    height: 35px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #354DB5;
+    align-items: center;
+    color: #354DB5;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+main .servicos button:hover{
+    background-color: #354DB5;
+    color: #fff;
+    font-weight: 700;
+    border: 0;
+}
+
 /*------------ DEPOIMENTOS --------------*/
 
 main .depoimentos{
