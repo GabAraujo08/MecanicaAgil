@@ -1,0 +1,20 @@
+/*--------------- FOOTER -----------------*/
+
+footer{
+    height: 30vh;
+    width: 98vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .conteudo-footer{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+footer .conteudo-footer nav ul li{
+    margin-bottom: 10px;
+}
