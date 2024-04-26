@@ -1,0 +1,18 @@
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.banner img{
+    border-radius: 15px;
+}
+
+.banner article h1{
+    font-size: 34px;
+}
+
+.banner article p{
+    width: 210px;
+}
