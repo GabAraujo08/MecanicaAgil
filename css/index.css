@@ -73,7 +73,7 @@ main .servicos{
 main .servicos .caixa-servico{
     display: flex;
     flex-wrap: wrap;
-    
+    max-width: 1240px;
     justify-content: space-between;
 }
 main .servicos .caixa-servico .servico{
