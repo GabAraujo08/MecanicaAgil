@@ -1,0 +1,15 @@
+main section{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Inter', sans-serif;
+}
+
+main section .colaborador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section .colaborador img{
+    cursor: pointer;
+}
