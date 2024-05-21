@@ -1,0 +1,8 @@
+@media (max-width: 1024px) {
+    .banner .texto-banner {
+      
+        top: 80%; /*ALTERADO DE 50% PARA 80%*/
+        
+    }
+  }
+
