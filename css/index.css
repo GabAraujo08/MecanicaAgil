@@ -58,8 +58,54 @@ main .beneficios .beneficio{
     font-family: 'Inter', sans-serif;
     padding: 15px;
 }
+/*------------ DIAGNOSTICO ------------*/
+main .gerar-diagnostico{
+    margin-bottom: 15px;
+    font-family: 'Inter', sans-serif;
+}
 
+main .gerar-diagnostico h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+main .gerar-diagnostico div img{
+    width: 409px;
+    height: 436px;
+}
+main .gerar-diagnostico div p{
+    color: #000;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+   
+    
+    
+}
 
+main .gerar-diagnostico .caixa-diagnostico{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .gerar-diagnostico .caixa-diagnostico textarea{
+    width: 50%;
+    height: 400px;
+    
+    border-radius: 10px;
+    flex-shrink: 0;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    resize: none;
+    position: relative;
+}
 /*------------ SERVIÇOS --------------*/
 
 main .servicos{
@@ -100,11 +146,7 @@ main .servicos .caixa-servico .servico img{
     border-radius: 10px;
 }
 
-main .servicos h1{
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
+
 
 
 main .servicos button{
