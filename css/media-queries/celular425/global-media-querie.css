@@ -1,0 +1,16 @@
+
+
+@media (max-width: 425px) {
+    footer .conteudo-footer {
+        width: 90%;
+    }
+    .banner .texto-banner h1{
+        font-size: 17px;
+    }
+    header nav .logo {
+        display: none;
+    }
+    header nav ul {
+        display: none;
+    }
+}

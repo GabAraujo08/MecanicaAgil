@@ -106,6 +106,21 @@ main .gerar-diagnostico .caixa-diagnostico textarea{
     resize: none;
     position: relative;
 }
+
+.btn-gerar-diagnostico{
+    background-color: #354DB5;
+    color: #fff;
+    font-weight: 700;
+    border: 0;
+    font-family: 'Inter', sans-serif;
+    width: 95px;
+    height: 35px;
+    font-size: 14px;
+    border-radius: 5px;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
 /*------------ SERVIÇOS --------------*/
 
 main .servicos{
