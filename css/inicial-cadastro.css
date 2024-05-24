@@ -1,0 +1,412 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+main .img{
+    grid-column: span 3;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.informacoes {
+    grid-column: span 9;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .tela-de-cadastro,
+.tela-de-cadastro * {
+  box-sizing: border-box;
+}
+.tela-de-cadastro {
+  background: #ffffff;
+  height: 1073px;
+  position: relative;
+  overflow: hidden;
+}
+.sign-up {
+  width: 624px;
+  height: 1017px;
+  position: absolute;
+  left: 816px;
+  top: 0px;
+}
+.seu-orcamento-sem-sair-de-casa {
+  color: #111111;
+  text-align: left;
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-size: 56px;
+  line-height: 64px;
+  font-weight: 600;
+  position: absolute;
+  left: 72px;
+  top: 107px;
+  width: 508px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.junte-se-a-nos {
+  color: #333333;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 48px;
+  font-weight: 500;
+  position: absolute;
+  left: 72px;
+  top: 242px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.social-media-signup-login {
+  background: #ffffff;
+  border-radius: 32px;
+  border-style: solid;
+  border-color: #333333;
+  border-width: 1px;
+  width: 393px;
+  height: 64px;
+  position: absolute;
+  left: 72px;
+  top: 378px;
+  overflow: hidden;
+}
+.frame-7 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: calc(50% - 182px);
+  top: calc(50% - 15px);
+  cursor: pointer;
+}
+.social-media-logo {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: visible;
+}
+.continue-with-google {
+  color: #333333;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.social-media-signup-login2 {
+  background: #ffffff;
+  border-radius: 32px;
+  border-style: solid;
+  border-color: #333333;
+  border-width: 1px;
+  width: 393px;
+  height: 64px;
+  position: absolute;
+  left: 72px;
+  top: 458px;
+  overflow: hidden;
+}
+.frame-72 {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: calc(50% - 178.5px);
+  top: calc(50% - 16.5px);
+}
+.social-media-logo2 {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  overflow: visible;
+}
+.continue-with-apple {
+  color: #333333;
+  text-align: left;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.divider {
+  display: flex;
+  flex-direction: row;
+  gap: 23px;
+  align-items: center;
+  justify-content: flex-start;
+  width: 393px;
+  position: absolute;
+  left: 72px;
+  top: 538px;
+}
+.divider2 {
+  background: rgba(102, 102, 102, 0.25);
+  flex: 1;
+  height: 2px;
+  position: relative;
+}
+.or {
+  color: #666666;
+  text-align: left;
+  font-family: "Inter-Black", sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.frame-279 {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  left: 72px;
+  top: 587px;
+}
+.button {
+  background: #111111;
+  border-radius: 40px;
+  flex-shrink: 0;
+  height: 64px;
+  position: relative;
+  overflow: hidden;
+}
+.frame-276 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: calc(50% - 146px);
+  top: calc(50% - 15.5px);
+}
+.sign-up2 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.link-text {
+  padding: 8px 8px 8px 0px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-shrink: 0;
+  position: relative;
+}
+.by-creating-an-account-you-agree-to-the-terms-of-use-and-privacy-policy {
+  color: #333333;
+  text-align: left;
+  font-family: "-", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.by-creating-an-account-you-agree-to-the-terms-of-use-and-privacy-policy-span {
+  color: #333333;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.by-creating-an-account-you-agree-to-the-terms-of-use-and-privacy-policy-span2 {
+  color: #333333;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.by-creating-an-account-you-agree-to-the-terms-of-use-and-privacy-policy-span3 {
+  color: #333333;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.by-creating-an-account-you-agree-to-the-terms-of-use-and-privacy-policy-span4 {
+  color: #333333;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+  cursor: pointer;
+}
+.by-creating-an-account-you-agree-to-the-terms-of-use-and-privacy-policy-span5 {
+  color: #333333;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.j-possui-conta-na-nossa-plataforma {
+  color: #333333;
+  text-align: left;
+  font-family: "Poppins-Medium", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  position: absolute;
+  left: 72px;
+  top: 767px;
+}
+.button2 {
+  border-radius: 40px;
+  border-style: solid;
+  border-color: #111111;
+  border-width: 1px;
+  height: 64px;
+  position: absolute;
+  right: 159px;
+  left: 72px;
+  top: 810px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.frame-2762 {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: calc(50% - 29px);
+  top: calc(50% - 15.5px);
+}
+.sign-up3 {
+  color: #111111;
+  text-align: center;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer {
+  background: #ffffff;
+  width: 1440px;
+  height: 56px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  overflow: hidden;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  position: absolute;
+  left: calc(50% - 401px);
+  top: calc(50% - 10px);
+}
+.about {
+  color: #666666;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.help-center {
+  color: #666666;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.terms-of-service {
+  color: #666666;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.privacy-policy {
+  color: #666666;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.cookie-policy {
+  color: #666666;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.accessibility {
+  color: #666666;
+  text-align: left;
+  font-family: "Poppins-Regular", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  position: relative;
+}
+.divider-bottom {
+  background: rgba(102, 102, 102, 0.25);
+  width: 1440px;
+  height: 1px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+}
+.design-sem-nome-2 {
+  width: 779px;
+  height: 1073px;
+  position: absolute;
+  left: 0px;
+  top: -48px;
+}
+.design-sem-nome-1-1 {
+  width: 779px;
+  height: 1042px;
+  position: absolute;
+  left: 0px;
+  top: -17px;
+}
+.viktor-theo-w-wn-4-ai-g-psc-m-unsplash-1 {
+  width: 683.42px;
+  height: 1025px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  object-fit: cover;
+} */

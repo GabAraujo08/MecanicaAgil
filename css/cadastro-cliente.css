@@ -1,0 +1,55 @@
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+main section h1{
+    margin-top: 50px;
+}
+main section{
+    width: 560px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+main form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main form input{
+    border-radius: 12px;
+  border-style: solid;
+  border-color: rgba(102, 102, 102, 0.35);
+  border-width: 1px;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 56px;
+  position: relative;
+  overflow: hidden;
+  padding-left: 10px;
+  
+}
+main form label{
+    margin-top: 35px;
+}
+
+main form button {
+    background: #111111;
+  border-radius: 40px;
+  opacity: 0.25;
+  flex-shrink: 0;
+  height: 64px;
+  position: relative;
+  overflow: hidden;
+  color: white;
+  border: 0;
+  margin-top: 30px;
+  font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
