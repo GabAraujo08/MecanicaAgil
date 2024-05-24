@@ -1,0 +1,99 @@
+body{
+    background-image: url('../assets/img/background-login.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    width: 470px;
+    height: 540px;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+main section form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-top: 60px;
+    
+}
+
+main section form input[type="email"], main section form input[type="password"]{
+    border-radius: 12px;
+  border-style: solid;
+  border-color: rgba(102, 102, 102, 0.35);
+  border-width: 1px;
+  align-self: stretch;
+  flex-shrink: 0;
+  height: 56px;
+  position: relative;
+  overflow: hidden;
+  padding-left: 10px;
+}
+
+main section form input[type="password"]{
+    margin-top: 45px;
+}
+
+main section form .btn-entrar{
+    background: #111111;
+    border-radius: 32px;
+    opacity: 0.25;
+    flex-shrink: 0;
+    height: 56px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+    margin-top: 30px;
+    font-size: 18px;
+    cursor : pointer;
+    font-weight: 500;
+    border: 0;
+    transition: 0.5s;
+}
+
+main section form .btn-entrar:hover{
+    opacity: 0.65;
+    
+}
+
+main section form input[type="checkbox"]{
+    margin-top: 15px;
+}
+
+main section form .lembrar-de-mim{
+    margin-bottom: 45px;
+}
+
+main section form .lembrar-de-mim label{
+    color: #666666;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+main section form p{
+    color: #666666;
+  font-family: "Inter-Regular", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+main section form p a{
+    color: #000000;
+  font-family: "Inter-SemiBold", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: underline;
+}
