@@ -1,6 +1,4 @@
-
-
-@media (max-width: 425px) {
+@media (max-width: 426px){
     footer .conteudo-footer {
         width: 90%;
     }
@@ -11,5 +9,5 @@
     header nav ul {
         display: none!important;
     }
-    
 }
+
