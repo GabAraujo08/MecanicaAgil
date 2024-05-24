@@ -11,6 +11,7 @@
         display: none;
     }
     header nav ul {
-        display: none;
+        display: none!important;
     }
+    
 }
