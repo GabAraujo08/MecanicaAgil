@@ -27,6 +27,7 @@ main section form {
     flex-direction: column;
     height: 100%;
     margin-top: 60px;
+    width: 100%;
     
 }
 
