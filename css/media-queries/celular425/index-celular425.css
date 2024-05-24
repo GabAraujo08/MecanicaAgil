@@ -17,4 +17,7 @@
     main .depoimentos { 
         overflow-x: auto;
     }
+    .banner .texto-banner h1{
+        font-size: 17px;
+    }
 }
