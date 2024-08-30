@@ -1,13 +1,10 @@
-
-
-
 import './style.css';
-
+import Logo from '../../assets/img/logo.png';
 const Header = () => {
     return (
         <header>
             <nav>
-                <img src="assets/img/logo.png" alt="" className="logo" />
+                <img src= {Logo} alt="" className="logo" />
                 <ul>
                     <li><a href="#servicos">Serviços</a></li>
                     <li><a href="#">Dúvidas</a></li>
