@@ -1,11 +1,13 @@
 import './App.css'
-import Header from './Componentes/Header/Header'
+import Banner from './Componentes/PagPrincipal/Banner/Banner'
+import Header from './Componentes/PagPrincipal/Header/Header'
 
 function App() {
   return (
     <>
     <main className='global'>
     <Header />
+    <Banner />
     </main>
   
     </>

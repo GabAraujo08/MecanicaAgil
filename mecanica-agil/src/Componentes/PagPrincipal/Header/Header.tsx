@@ -1,5 +1,6 @@
-import './style.css';
-import Logo from '../../assets/img/logo.png';
+import '../../PagPrincipal/Header/style.css';
+import Logo from '../../../assets/img/logo.svg';
+
 const Header = () => {
     return (
         <header>
