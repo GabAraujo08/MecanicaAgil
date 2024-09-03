@@ -1,0 +1,124 @@
+h1{
+    color: #00A1FC;
+    font-weight: 700;
+    /* margin: 0; */
+}
+p{
+    color: #000;
+    font-weight: 600;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+body{
+    background-color: #fff;
+    font-family: 'Inter', sans-serif;
+}
+
+#root{
+    width: 100%;
+}
+
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 67%;
+}
+
+.login section, form{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+section{
+    gap: 10px;
+}
+.sideBarImgLogin{
+    max-height: 100vh;
+}
+
+section button{
+    background: transparent;
+    color: rgba(0, 0, 0, 0.79);
+    border: 2px solid #000;
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    width: 380px;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 380px;
+}
+form input{
+    background-color: transparent;
+    width: 380px;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+    height: 43px;
+    font-size: 1em;
+    text-indent: 10px;
+    border: 2px solid #000;
+    color: rgba(0, 0, 0, 0.79);
+}
+
+#remember{
+    width: 20px;
+}
+
+
+
+label[for="remember"] {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    color: #000;
+    align-items: center;
+}
+
+label{
+    color: #000;
+}
+
+.divisor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    color: rgba(0, 0, 0, 0.79);
+    width: 380px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.divisor hr{
+    color: black;
+    height: 2px;
+    width: 45%;
+    display: flex;
+    background: rgba(0, 0, 0, 0.79);
+}
+
+button[type="submit"]{
+    background-color: #00A1FC;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+a{
+    color: #000;
+    text-decoration: none;
+}
