@@ -9,7 +9,7 @@ p{
     margin: 0;
 }
 
-main{
+.mainLogin{
     display: flex;
     justify-content: space-between;
 }
@@ -30,7 +30,7 @@ body{
     width: 67%;
 }
 
-.login section, form{
+.login section, .formLogin{
     display: flex;
     flex-direction: column;
     
@@ -53,13 +53,13 @@ section button{
     width: 380px;
     
 }
-form{
+.formLogin{
     display: flex;
     flex-direction: column;
     gap: 10px;
     max-width: 380px;
 }
-form input{
+.formLogin input{
     background-color: transparent;
     width: 380px;
     border-radius: 8px;

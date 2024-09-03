@@ -19,7 +19,7 @@ const FormLogin = () => {
                 <span>OU</span>
                 <hr />
             </div>
-            <form>
+            <form className='formLogin'>
                 
                 <input type="email" id="email" name="email" placeholder="E-mail" required />
                 

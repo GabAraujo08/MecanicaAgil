@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import Login from './Login.tsx'
 import App from './App.tsx'
+import Cadastro from './Cadastro.tsx'
 
 const _router = createBrowserRouter([
   {
@@ -14,7 +15,13 @@ const _router = createBrowserRouter([
   {
     path: "/",
     element: <App />
+  },
+  {
+    path: "/cadastro",
+    element: <Cadastro />
   }
+  
+
 ])
 
 createRoot(document.getElementById('root')!).render(
