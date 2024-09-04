@@ -5,7 +5,6 @@ const Diagnostico = () => {
     return (
         <section className="gerar-diagnostico">
             <h1>Qual problema você está enfrentando</h1>
-
             <div className="caixa-diagnostico">
                 <div className="img-e-texto">
                     <img src={Diag} alt=""/>

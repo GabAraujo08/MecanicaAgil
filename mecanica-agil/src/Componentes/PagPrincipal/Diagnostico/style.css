@@ -4,6 +4,7 @@
 }
 
 .gerar-diagnostico h1{
+    color: #000;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -11,15 +12,15 @@
 }
 
 .gerar-diagnostico div img{
-    width: 409px;
-    height: 436px;
+    width: 430px;
+    height: 429px;
 }
 
 .gerar-diagnostico div p{
     color: #000;
     text-align: left;
     font-family: 'Inter', sans-serif;
-    font-size: 32px;
+    font-size: 26px;
     font-style: normal;
     font-weight: 700;
     line-height: normal; 
@@ -32,31 +33,16 @@
 }
 
 .gerar-diagnostico .caixa-diagnostico textarea{
-    width: 50%;
-    height: 400px;
+    width: 715px;
+    height: 447px;
     
-    border-radius: 10px;
+    border-radius: 15px;
     flex-shrink: 0;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 2px solid #00A1FC;
     border-radius: 4px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     resize: none;
     position: relative;
-}
-
-.btn-gerar-diagnostico{
-    background-color: #354DB5;
-    color: #fff;
-    font-weight: 700;
-    border: 0;
-    font-family: 'Inter', sans-serif;
-    width: 95px;
-    height: 35px;
-    font-size: 14px;
-    border-radius: 5px;
-    align-items: center;
-    cursor: pointer;
-    transition: 0.3s;
 }
