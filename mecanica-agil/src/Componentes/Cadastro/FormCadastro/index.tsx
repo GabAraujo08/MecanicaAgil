@@ -1,9 +1,10 @@
 import "./style.css";
 import logoMecanicaAgil from "../../../assets/img/logo.svg";
-
+import vetorFormCadastro from "../../../assets/img/imgCarCadastro.svg"
 const FormCadastro = () => {
   return (
     <div className="boxFormCadastro">
+      <img className="vetorFormCadastro" src={vetorFormCadastro} alt="" />
       <form className="formCadastro" action="#" method="post">
         <h1>CADASTRE-SE</h1>
         <p>Crie uma conta em nossa plataforma e acesse todos nossos recursos.</p>
@@ -27,8 +28,8 @@ const FormCadastro = () => {
             })}
           </select>
         </div>
-        <label htmlFor="genero">Genêro:</label>
-        {/* <div className="gender-options">
+        {/* <label htmlFor="genero">Genêro:</label>
+        <div className="gender-options">
           <label>
             <input type="radio" name="genero" value="F" required /> F
           </label>
@@ -41,7 +42,7 @@ const FormCadastro = () => {
         </div> */}
 
         <button type="submit">Cadastra-se</button>
-
+        <p className="legendaFormCadastro">Caso já tenha uma conta, <u>clique aqui.</u></p>
         <div className="logoFormCadastro">
           <img src={logoMecanicaAgil} alt="Logo Mecânica Ágil" />
 

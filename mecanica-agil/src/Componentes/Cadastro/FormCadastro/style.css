@@ -61,3 +61,28 @@ label[for="data-nascimento"]{
     font-family: 'Inter', sans-serif;
     font-weight: 600;
 }
+
+.birthdate{
+    gap: 5px;
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.birthdate select{
+    border: 2px black solid;
+    border-radius: 4px;
+}
+
+.vetorFormCadastro {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+  }
+
+  .legendaFormCadastro u{
+    color: #056CF3;
+    font-weight: 600;
+    cursor: pointer;
+  }
