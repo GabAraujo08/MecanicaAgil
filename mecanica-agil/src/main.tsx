@@ -6,6 +6,7 @@ import './index.css'
 import Login from './Login.tsx'
 import App from './App.tsx'
 import Cadastro from './Cadastro.tsx'
+import EscolhaServicoPage from './EscolhaServicoPage.tsx'
 
 const _router = createBrowserRouter([
   {
@@ -19,6 +20,10 @@ const _router = createBrowserRouter([
   {
     path: "/cadastro",
     element: <Cadastro />
+  },
+  {
+    path: "/escolha-servico",
+    element: <EscolhaServicoPage />
   }
   
 

@@ -1,0 +1,23 @@
+.banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    margin-top: 50px;
+}
+
+.banner img{
+    border-radius: 15px;
+}
+
+.banner article h1{
+    font-size: 34px;
+}
+
+.banner article p{
+    width: 275px;
+    font-size: 22px;
+}
+.banner article a{
+    color: #00A1FC;
+}
