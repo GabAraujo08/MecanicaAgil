@@ -1,4 +1,5 @@
 import '../Banner/style.css'
+import FotoAr from '../../../assets/img/ar-condicionado.svg'
 
 const ServicoBanner = () => {
     return(
@@ -8,7 +9,7 @@ const ServicoBanner = () => {
                 <p>Aqui estão alguns serviços que disponibilizamos para ar-condicionado.</p>
             </article>
 
-            <img src="../assets/img/ar-condicionado.svg" alt=""/>
+            <img src={FotoAr} alt=""/>
             <article>
                 <h1>Não achou o que precisa?</h1>
                 <p><a href="">Clique aqui</a> para enviar uma sugestão de serviço.</p>
