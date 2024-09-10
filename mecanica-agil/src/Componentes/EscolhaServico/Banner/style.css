@@ -8,11 +8,17 @@
 
 .banner-servico img{
     border-radius: 15px;
-    width: 277px;
+    width: 33%;
 }
+
+.banner-servico article{
+    width: 330px;
+}
+
 
 .banner-servico article h1{
     font-size: 34px;
+    margin: 0;
 }
 
 .banner-servico-servico article p{
