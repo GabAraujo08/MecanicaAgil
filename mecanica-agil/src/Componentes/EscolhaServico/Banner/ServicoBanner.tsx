@@ -3,7 +3,7 @@ import FotoAr from '../../../assets/img/ar-condicionado.svg'
 
 const ServicoBanner = () => {
     return(
-        <section className="banner">
+        <section className="banner-servico">
             <article>
                 <h1>Ar-condicionado</h1>
                 <p>Aqui estão alguns serviços que disponibilizamos para ar-condicionado.</p>

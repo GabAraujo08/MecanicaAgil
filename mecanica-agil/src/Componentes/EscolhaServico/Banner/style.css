@@ -1,4 +1,4 @@
-.banner {
+.banner-servico {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -6,19 +6,19 @@
     margin-top: 50px;
 }
 
-.banner img{
+.banner-servico img{
     border-radius: 15px;
     width: 277px;
 }
 
-.banner article h1{
+.banner-servico article h1{
     font-size: 34px;
 }
 
-.banner article p{
+.banner-servico-servico article p{
     width: 275px;
     font-size: 22px;
 }
-.banner article a{
+.banner-servico article a{
     color: #00A1FC;
 }
