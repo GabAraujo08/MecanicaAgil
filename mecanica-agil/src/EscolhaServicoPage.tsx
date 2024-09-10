@@ -11,9 +11,9 @@ function EscolhaServicoPage() {
             <ServicoHeader />
             <ServicoBanner />
             <OpcaoServico />
-        <section className='margem'>
+        {/* <section className='margem'> */}
             <ServicoFooter />
-        </section>
+        {/* </section> */}
         </main>
         
        
