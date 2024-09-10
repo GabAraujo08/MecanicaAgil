@@ -16,7 +16,7 @@ const Depoimento = () => {
                     <h2>Direção hidraúlica</h2>
                     <p>“O serviço foi prestado com rapidez, indo direto ao problema, consegui achar um lugar para levar meu
                         carro e o preço cabe no bolso.”</p>
-                    <h3>Gabriel Araujo</h3>
+                    <h3>Thiago Henry Dias</h3>
                 </div>
                 <i><img src={ArrowRight} alt=""/></i>
             </section> 
