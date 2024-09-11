@@ -3,12 +3,12 @@ import foto from '../../../assets/img/carrobatido.png'
 
 const Main = () => {
     return (
-        <main className="main-content">
+        <main className="solicitar-servico">
             <div className="content-wrapper">
             <div className="image-column">
-                <img src={foto} />
                 <h1 className="service-title">Solicitação de serviço</h1>
             </div>
+            <img src={foto} alt="" className='carro' />
             <div className="form-column">
                 <form className="service-form">
                 <label >Nome do serviço:</label>
