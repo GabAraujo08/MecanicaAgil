@@ -7,6 +7,7 @@ import Login from './Login.tsx'
 import App from './App.tsx'
 import Cadastro from './Cadastro.tsx'
 import EscolhaServicoPage from './EscolhaServicoPage.tsx'
+import SolicitarServicoPage from './SolicitarServico.tsx'
 
 const _router = createBrowserRouter([
   {
@@ -24,6 +25,10 @@ const _router = createBrowserRouter([
   {
     path: "/escolha-servico",
     element: <EscolhaServicoPage />
+  },
+  {
+    path: "/solicitar-servico",
+    element: <SolicitarServicoPage/>
   }
   
 
