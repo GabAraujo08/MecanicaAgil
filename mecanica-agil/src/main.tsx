@@ -8,6 +8,7 @@ import App from './App.tsx'
 import Cadastro from './Cadastro.tsx'
 import EscolhaServicoPage from './EscolhaServicoPage.tsx'
 import SolicitarServicoPage from './SolicitarServico.tsx'
+import IntegrantesPage from './IntegrantesPage.tsx'
 
 const _router = createBrowserRouter([
   {
@@ -29,8 +30,11 @@ const _router = createBrowserRouter([
   {
     path: "/solicitar-servico",
     element: <SolicitarServicoPage/>
+  },
+  {
+    path: "/integrantes",
+    element: <IntegrantesPage/>
   }
-  
 
 ])
 
