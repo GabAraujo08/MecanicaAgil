@@ -5,20 +5,15 @@ const Main = () => {
     return (
         <main className="solicitar-servico">
             <div className="content-wrapper">
-            <div className="image-column">
-                <h1 className="service-title">Solicitação de serviço</h1>
-            </div>
-            <img src={foto} alt="" className='carro' />
+                <img src={foto} className="carro" alt=""/>
             <div className="form-column">
                 <form className="service-form">
                 <label >Nome do serviço:</label>
                 <input type="text" className="form-input" placeholder="Digite aqui..." />
-        
                 <label htmlFor="service-type" className="visually-hidden">Tipo de serviço</label>
                 <select className="form-select">
                     <option value="">Selecione o tipo de serviço</option>
                 </select>
-        
                 <label >Qual o motivo da sua solicitação ?</label>
                 <textarea className="form-textarea" placeholder="Digite aqui..."></textarea>
                 </form>

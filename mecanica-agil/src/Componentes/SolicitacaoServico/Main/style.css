@@ -11,8 +11,8 @@
   display: flex;
 }
 
-.image-column {
-  width: 68%;
+img .carro {
+  height: 400px;
 }
 
 .carro {
