@@ -3,6 +3,7 @@ main .depoimentos{
     display: flex;
     align-items: center;
     font-family: 'Inter', sans-serif;
+    color: black;
 }
 
 main .depoimentos .depoimento{
