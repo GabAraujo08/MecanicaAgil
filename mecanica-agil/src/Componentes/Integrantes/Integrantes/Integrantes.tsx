@@ -7,7 +7,7 @@ import LogoGIT from '../../../assets/img/icon-github.svg'
 const Integrantes = () => {
     return (
         <main>
-            <section>
+            <section className='sectionIntegrantes'>
             
                 <div className="colaborador">
                     <img src={FotoGabriel} alt=""/>

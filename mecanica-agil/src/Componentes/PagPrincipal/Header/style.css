@@ -13,6 +13,7 @@ header nav .logo {
 }
 
 header nav input{
+    background-color: white;
     height: 35px;
     border: 2px solid #D2D2D2;
     padding-left: 5px;

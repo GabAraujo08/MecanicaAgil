@@ -13,7 +13,7 @@ const Serviços = () => {
             <div className="caixa-servico">
                 <div className="servico">
                     <img src= {Ar} alt=""/>
-                    <p>AR-CONDICIONADO</p>
+                    <a href="/escolha-servico"><p>AR-CONDICIONADO</p></a>
                 </div>
                 <div className="servico">
                     <img src={Painel} alt=""/>

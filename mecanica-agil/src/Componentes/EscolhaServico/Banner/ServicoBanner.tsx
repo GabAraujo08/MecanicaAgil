@@ -12,7 +12,7 @@ const ServicoBanner = () => {
             <img src={FotoAr} alt=""/>
             <article>
                 <h1>Não achou o que precisa?</h1>
-                <p><a href="">Clique aqui</a> para enviar uma sugestão de serviço.</p>
+                <p><a href="/solicitar-servico">Clique aqui</a> para enviar uma sugestão de serviço.</p>
             </article>
         </section>
 

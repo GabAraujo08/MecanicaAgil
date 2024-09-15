@@ -1,16 +1,16 @@
-main section{
+main .sectionIntegrantes{
     display: flex;
     justify-content: space-around;
     font-family: 'Inter', sans-serif;
     margin-top: 100px;
 }
 
-main section .colaborador{
+main .sectionIntegrantes .colaborador{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-main section .colaborador img{
+main .sectionIntegrantes .colaborador img{
     cursor: pointer;
 }
