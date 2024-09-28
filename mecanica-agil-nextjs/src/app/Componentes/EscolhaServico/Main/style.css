@@ -1,0 +1,30 @@
+main .opcoes-servicos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 150px;
+}
+
+main .opcoes-servicos .servico{
+    margin-bottom: 50px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s; /* Adiciona transição para o efeito de escala */
+}
+
+main .opcoes-servicos .servico:hover {
+    transform: scale(1.1); /* Aumenta a escala em 10% ao passar o mouse */
+}
+main .opcoes-servicos .servico p{
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 800;
+    color: #fff;
+    white-space: nowrap; /* Evita que o texto seja quebrado */
+}
+main .opcoes-servicos .servico img{
+    border-radius: 10px;
+}

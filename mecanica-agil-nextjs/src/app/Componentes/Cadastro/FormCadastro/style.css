@@ -1,0 +1,88 @@
+.mainCadastro{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sideBarImgCadastro{
+    max-height: 100vh;
+}
+.formCadastro h1{
+    text-align: center;
+    margin: 0;
+}
+.formCadastro p{
+    width: 384px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.formCadastro{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.formCadastro .camposFormCadastro{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.formCadastro #nome, #email, #senha{
+    background-color: transparent;
+    width: 380px;
+    border-radius: 8px;
+    padding: 0;
+    margin: 0;
+    height: 43px;
+    font-size: 1em;
+    text-indent: 10px;
+    border: 2px solid #000;
+    color: rgba(0, 0, 0, 0.79);
+}
+.formCadastro select, option{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+.boxFormCadastro{
+    width: 68%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.logoFormCadastro{
+    display: flex;
+    justify-content: center;
+}
+
+label[for="data-nascimento"]{
+    margin-top: 15px;
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+}
+
+.birthdate{
+    gap: 5px;
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.birthdate select{
+    border: 2px black solid;
+    border-radius: 4px;
+}
+
+.vetorFormCadastro {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 200px;
+  }
+
+  .legendaFormCadastro u{
+    color: #056CF3;
+    font-weight: 600;
+    cursor: pointer;
+  }
