@@ -15,10 +15,6 @@ function EscolhaServicoPage() {
             <ServicoFooter />
         {/* </section> */}
         </main>
-        
-       
-
-        
     )
 }
 

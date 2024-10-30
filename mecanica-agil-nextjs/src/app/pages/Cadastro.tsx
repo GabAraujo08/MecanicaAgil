@@ -1,7 +1,7 @@
 
 import './App.css'
 import sidebarImgCadastro from './assets/img/sideBarImgCadastro.svg'
-import FormCadastro from './Componentes/Cadastro/FormCadastro'
+import FormCadastro from '../Componentes/Cadastro/FormCadastro'
 function Cadastro() {
 
 
