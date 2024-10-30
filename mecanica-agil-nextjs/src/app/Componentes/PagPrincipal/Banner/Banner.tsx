@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import BannerIMG from '../../../assets/img/banner.png'; // Adjust the path as necessary
-
+import './style.css'; // Importando o CSS
 
 const Banner = () => {
     return (

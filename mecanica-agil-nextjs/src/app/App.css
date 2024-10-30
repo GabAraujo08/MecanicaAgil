@@ -7,6 +7,9 @@
     box-sizing: border-box;
     list-style: none;    
 }
+body{
+   margin: 0;
+}
 
 .margem{
     max-width: 1200px;

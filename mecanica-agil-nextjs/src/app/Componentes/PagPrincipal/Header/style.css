@@ -10,7 +10,7 @@ header nav {
 
 header nav .logo {
     width: 100px;
-    
+    height: auto;
 }
 
 header nav input{
