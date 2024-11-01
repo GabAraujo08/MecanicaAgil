@@ -61,7 +61,7 @@ const Diagnostico = () => {
                     id="problema"
                     placeholder="Digite o seu problema..."
                 ></textarea>
-                <button
+                <button 
                     onClick={handleDiagnostico}
                     className="btn-gerar-diagnostico"
                 >

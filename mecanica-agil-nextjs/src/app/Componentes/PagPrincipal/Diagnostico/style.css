@@ -90,3 +90,13 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+.btn-gerar-diagnostico{
+    background-color: #00A1FC;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
