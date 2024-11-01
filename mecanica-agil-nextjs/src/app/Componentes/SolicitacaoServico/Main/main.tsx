@@ -1,14 +1,15 @@
-import './style.css'
-import foto from '../../../assets/img/carrobatido.png'
+import Image from 'next/image';
+import './style.css';
+import foto from '../../../assets/img/carrobatido.png';
 
 const Main = () => {
     return (
         <main className="solicitar-servico">
             <div className="content-wrapper">
-                <img src={foto} className="carro" alt=""/>
+                <Image src={foto} className="carro" alt="Carro batido" />
                 <div className="form-column">
                     <form className="service-form">
-                        <label >Nome do serviço:</label>
+                        <label>Nome do serviço:</label>
                         <input type="text" className="form-input" placeholder="Digite aqui..." />
                         <select className="form-select">
                             <option value="">Selecione o tipo de serviço</option>
@@ -16,7 +17,7 @@ const Main = () => {
                             <option value="">b</option>
                             <option value="">c</option>
                         </select>
-                        <label >Qual o motivo da sua solicitação ?</label>
+                        <label>Qual o motivo da sua solicitação?</label>
                         <textarea className="form-textarea" placeholder="Digite aqui..."></textarea>
                         <div className="submit-button">
                             <button type="submit" className="submit">Enviar</button>
@@ -31,7 +32,7 @@ const Main = () => {
                 </p>
             </div>
         </main>
-    )
+    );
 }
 
 export default Main;
