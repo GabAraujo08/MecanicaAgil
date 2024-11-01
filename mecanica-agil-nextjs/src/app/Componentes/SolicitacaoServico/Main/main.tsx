@@ -6,7 +6,7 @@ const Main = () => {
     return (
         <main className="solicitar-servico">
             <div className="content-wrapper">
-                <Image src={foto} className="carro" alt="Carro batido" />
+                <Image src={foto} className="carro" alt="Carro batido" width={500} height={300} />
                 <div className="form-column">
                     <form className="service-form">
                         <label>Nome do serviço:</label>
