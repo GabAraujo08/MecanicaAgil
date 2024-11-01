@@ -51,7 +51,7 @@ section button{
     justify-content: flex-start;
     gap: 10px;
     width: 380px;
-    
+    font-family: 'Inter', sans-serif;
 }
 .formLogin{
     display: flex;

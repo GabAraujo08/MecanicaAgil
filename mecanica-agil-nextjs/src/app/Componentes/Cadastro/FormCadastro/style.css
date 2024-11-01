@@ -1,3 +1,7 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+
 .mainCadastro{
     display: flex;
     justify-content: space-between;
@@ -84,5 +88,15 @@ label[for="data-nascimento"]{
   .legendaFormCadastro u{
     color: #056CF3;
     font-weight: 600;
+    cursor: pointer;
+  }
+
+  button{
+    background-color: #00A1FC;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 1em;
     cursor: pointer;
   }
