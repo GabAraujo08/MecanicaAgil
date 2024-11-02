@@ -29,7 +29,7 @@ def generate_content():
     instructions = (
         "Você é um assistente inteligente e deve fornecer diagnósticos detalhados acerca de problemas mecânicos e apenas isto, rejeito qualquer coisa além disso. "
         "Por favor, responda com clareza e formate a resposta em tópicos, "
-        "incluindo a causa possível, onde está o problema, estimativa de custo e tempo para reparo. "
+        "para que o usuário possa entender facilmente o que você está tentando comunicar. "
     )
 
     # Concatenar instruções com o prompt original
