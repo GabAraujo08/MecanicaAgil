@@ -1,37 +1,66 @@
-*{
+* {
     font-family: 'Inter', sans-serif;
 }
 
-.mainCadastro{
+/* Estrutura principal */
+.mainCadastro {
     display: flex;
     justify-content: space-between;
 }
 
-.sideBarImgCadastro{
+.sideBarImgCadastro {
     max-height: 100vh;
 }
-.formCadastro h1{
+
+.boxFormCadastro {
+    width: 68%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Formulário de cadastro */
+.formCadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    max-width: 500px;
+}
+
+.formCadastro h1 {
     text-align: center;
     margin: 0;
+    font-size: 1.8em;
 }
-.formCadastro p{
+
+.formCadastro p {
     width: 384px;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 1em;
+    color: #555;
 }
-.formCadastro{
-    
+
+.camposFormCadastro {
     display: flex;
     flex-direction: column;
-    align-items: left;
-}
-.formCadastro .camposFormCadastro{
     gap: 15px;
-    display: flex;
-    flex-direction: column;
 }
-.formCadastro #nome, #email, #senha{
+
+.formCadastro input,
+.formCadastro select,
+option {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
+
+/* Estilização dos inputs */
+.formCadastro #nome,
+.formCadastro #email,
+.formCadastro #senha,
+.camposFormCadastro input {
     background-color: transparent;
     width: 380px;
     border-radius: 8px;
@@ -42,40 +71,38 @@
     text-indent: 10px;
     border: 2px solid #000;
     color: rgba(0, 0, 0, 0.79);
-}
-.formCadastro select, option{
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-}
-.boxFormCadastro{
-    width: 68%;
-    display: flex;
-    justify-content: center;
-    align-items: center
+    transition: border-color 0.3s ease-in-out;
 }
 
-.logoFormCadastro{
-    display: flex;
-    justify-content: center;
+.camposFormCadastro input:focus {
+    border-color: #1a73e8;
+    outline: none;
 }
 
-label[for="data-nascimento"]{
-    margin-top: 15px;
+.formCadastro select,
+.birthdate select {
+    border: 2px solid black;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.formCadastro select:focus,
+.birthdate select:focus {
+    border-color: #1a73e8;
+    outline: none;
+}
+
+/* Estilos para data de nascimento */
+label[for="data-nascimento"] {
     margin-top: 20px;
-    font-family: 'Inter', sans-serif;
     font-weight: 600;
 }
 
-.birthdate{
-    gap: 5px;
+.birthdate {
     display: flex;
-    margin-bottom: 10px;
+    gap: 5px;
     margin-top: 10px;
-}
-
-.birthdate select{
-    border: 2px black solid;
-    border-radius: 4px;
+    margin-bottom: 10px;
 }
 
 .vetorFormCadastro {
@@ -83,15 +110,10 @@ label[for="data-nascimento"]{
     right: 0;
     bottom: 0;
     width: 200px;
-  }
+}
 
-  .legendaFormCadastro u{
-    color: #056CF3;
-    font-weight: 600;
-    cursor: pointer;
-  }
-
-  button{
+/* Botão de cadastro */
+button {
     background-color: #00A1FC;
     color: #fff;
     border: none;
@@ -99,4 +121,30 @@ label[for="data-nascimento"]{
     padding: 10px;
     font-size: 1em;
     cursor: pointer;
-  }
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #056CF3;
+}
+
+/* Legenda para conta existente */
+.legendaFormCadastro {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.legendaFormCadastro u {
+    color: #056CF3;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Logo */
+.logoFormCadastro {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
