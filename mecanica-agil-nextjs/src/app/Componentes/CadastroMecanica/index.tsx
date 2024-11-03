@@ -54,6 +54,7 @@ const CadastroMecanica: React.FC = () => {
                 setMensagem(`Erro ao cadastrar mecânica: ${errorData.message || 'Erro desconhecido'}`);
             }
         } catch (error) {
+            console.error(error);
             setMensagem("Erro ao conectar ao servidor. Tente novamente.");
         }
     };

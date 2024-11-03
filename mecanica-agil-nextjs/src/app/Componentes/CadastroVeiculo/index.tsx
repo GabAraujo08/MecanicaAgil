@@ -66,7 +66,8 @@ const CadastroVeiculo: React.FC = () => {
                 setMensagem(`Erro ao cadastrar veículo: ${errorData.message || 'Erro desconhecido'}`);
             }
         } catch (error) {
-            setMensagem("Erro ao conectar ao servidor. Tente novamente.");
+            console.error(error);
+    setMensagem("Erro ao conectar ao servidor. Tente novamente.");
         }
     };
 

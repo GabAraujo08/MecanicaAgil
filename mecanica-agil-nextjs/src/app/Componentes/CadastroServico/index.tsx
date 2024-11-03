@@ -54,6 +54,7 @@ const CadastroServico: React.FC = () => {
                 setMensagem(`Erro ao cadastrar serviço: ${errorData.message || 'Erro desconhecido'}`);
             }
         } catch (error) {
+            console.error(error);
             setMensagem("Erro ao conectar ao servidor. Tente novamente.");
         }
     };
