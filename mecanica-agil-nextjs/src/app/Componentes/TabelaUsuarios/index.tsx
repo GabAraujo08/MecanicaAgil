@@ -21,7 +21,7 @@ const TabelaUsuarios: React.FC = () => {
   useEffect(() => {
     const fetchUsuarios = async () => {
       try {
-        const response = await fetch('/api/proxy/usuario/all'); // Ajuste o endpoint se necessário
+        const response = await fetch('/api/proxy/usuario/all');
         if (!response.ok) {
           throw new Error('Erro ao buscar dados dos usuários');
         }
@@ -38,13 +38,13 @@ const TabelaUsuarios: React.FC = () => {
 
   const handleDelete = async (cpf: string) => {
     try {
-      const response = await fetch(`http://meuprojeto.link/mecanica-agil/api/usuario/delete/${cpf}`, {
+      const response = await fetch(`/api/proxy/usuario/delete/${cpf}`, {
         method: 'DELETE',
       });
       if (!response.ok) {
         throw new Error('Erro ao excluir o usuário');
       }
-      setUsuarios(usuarios.filter(usuario => usuario.cpf !== cpf));
+      setUsuarios(usuarios.filter((usuario) => usuario.cpf !== cpf));
     } catch (error) {
       setError('Falha ao excluir o usuário');
       console.error(error);
@@ -53,20 +53,20 @@ const TabelaUsuarios: React.FC = () => {
 
   const handleDownloadCSV = () => {
     const header = ["ID", "CPF", "Nome", "Endereço", "Email", "Senha", "Data de Nascimento", "Telefone"];
-    const rows = usuarios.map(usuario => [
+    const rows = usuarios.map((usuario) => [
       usuario.id,
       usuario.cpf,
       usuario.nome,
       usuario.endereco,
       usuario.email,
-      "******", // Senha oculta
+      "******",
       formatDate(usuario.dataNascimento),
       usuario.telefone,
     ]);
 
     const csvContent =
       "data:text/csv;charset=utf-8," +
-      [header, ...rows].map(row => row.join(",")).join("\n");
+      [header, ...rows].map((row) => row.join(",")).join("\n");
 
     const encodedUri = encodeURI(csvContent);
     const link = document.createElement("a");
@@ -94,7 +94,7 @@ const TabelaUsuarios: React.FC = () => {
     if (currentUsuario) {
       setCurrentUsuario({
         ...currentUsuario,
-        [e.target.name]: e.target.name === "dataNascimento" ? e.target.value : e.target.value,
+        [e.target.name]: e.target.value,
       });
     }
   };
@@ -102,7 +102,7 @@ const TabelaUsuarios: React.FC = () => {
   const handleEditSave = async () => {
     if (currentUsuario) {
       try {
-        const response = await fetch(`http://meuprojeto.link/mecanica-agil/api/usuario/update/${currentUsuario.cpf}`, {
+        const response = await fetch(`/api/proxy/usuario/update/${currentUsuario.cpf}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -120,7 +120,9 @@ const TabelaUsuarios: React.FC = () => {
           throw new Error('Erro ao atualizar o usuário');
         }
 
-        setUsuarios(usuarios.map(usuario => usuario.cpf === currentUsuario.cpf ? currentUsuario : usuario));
+        setUsuarios(usuarios.map((usuario) =>
+          usuario.cpf === currentUsuario.cpf ? currentUsuario : usuario
+        ));
         setIsModalOpen(false);
         setCurrentUsuario(null);
       } catch (error) {
@@ -142,7 +144,7 @@ const TabelaUsuarios: React.FC = () => {
           <table className="user-table">
             <thead>
               <tr>
-                <th>ID</th> {/* Coluna para ID */}
+                <th>ID</th>
                 <th>CPF</th>
                 <th>Nome</th>
                 <th>Endereço</th>
@@ -156,12 +158,12 @@ const TabelaUsuarios: React.FC = () => {
             <tbody>
               {usuarios.map((usuario) => (
                 <tr key={usuario.cpf}>
-                  <td>{usuario.id}</td> {/* Exibe o ID do usuário */}
+                  <td>{usuario.id}</td>
                   <td>{usuario.cpf}</td>
                   <td>{usuario.nome}</td>
                   <td>{usuario.endereco}</td>
                   <td>{usuario.email}</td>
-                  <td>******</td> {/* Senha oculta */}
+                  <td>******</td>
                   <td>{formatDate(usuario.dataNascimento)}</td>
                   <td>{usuario.telefone}</td>
                   <td>
@@ -213,8 +215,8 @@ const TabelaUsuarios: React.FC = () => {
                   <input
                     type="text"
                     name="senha"
-                    value="******" // Exibir senha oculta
-                    readOnly // Campo somente leitura
+                    value="******"
+                    readOnly
                   />
                 </label>
                 <label>
