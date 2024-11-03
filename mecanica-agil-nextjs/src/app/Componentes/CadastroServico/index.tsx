@@ -28,7 +28,7 @@ const CadastroServico: React.FC = () => {
             nome: servico.nome,
             descricao: servico.descricao,
             categoria: servico.categoria,
-            valor: parseFloat(servico.valor) // Convertendo o valor para número
+            valor: parseFloat(servico.valor)
         };
 
         try {
@@ -78,7 +78,8 @@ const CadastroServico: React.FC = () => {
                 </div>
                 <div className="form-group">
                     <label htmlFor="descricao">Descrição</label>
-                    <textarea
+                    <input
+                        type="text"
                         id="descricao"
                         name="descricao"
                         value={servico.descricao}
@@ -100,7 +101,7 @@ const CadastroServico: React.FC = () => {
                     />
                 </div>
                 <div className="form-group">
-                    <label htmlFor="valor">Valor do Serviço (R$)</label>
+                    <label htmlFor="valor">Valor</label>
                     <input
                         type="number"
                         id="valor"
