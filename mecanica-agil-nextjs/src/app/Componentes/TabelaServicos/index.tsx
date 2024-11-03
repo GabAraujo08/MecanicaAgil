@@ -18,41 +18,36 @@ const TabelaServicos: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentServico, setCurrentServico] = useState<Servico | null>(null);
 
+  // Fetch dos serviços
   useEffect(() => {
     const fetchServicos = async () => {
       try {
-        const response = await fetch('http://meuprojeto.link/mecanica-agil/api/servico/all');
-        if (!response.ok) {
-          throw new Error('Erro ao buscar dados dos serviços');
-        }
+        const response = await fetch('/api/servico/all');
+        if (!response.ok) throw new Error('Erro ao buscar dados dos serviços');
         const data = await response.json();
         setServicos(data);
       } catch (error) {
         setError('Falha ao carregar os dados dos serviços');
-        console.error(error);
       }
     };
 
     fetchServicos();
   }, []);
 
+  // Função para deletar um serviço
   const handleDelete = async (idServico: number) => {
     try {
-      const response = await fetch(`http://meuprojeto.link/mecanica-agil/api/servico/delete/${idServico}`, {
-        method: 'DELETE',
-      });
-      if (!response.ok) {
-        throw new Error('Erro ao excluir o serviço');
-      }
+      const response = await fetch(`/api/servico/delete/${idServico}`, { method: 'DELETE' });
+      if (!response.ok) throw new Error('Erro ao excluir o serviço');
       setServicos(servicos.filter(servico => servico.idServico !== idServico));
     } catch (error) {
       setError('Falha ao excluir o serviço');
-      console.error(error);
     }
   };
 
+  // Função para baixar a lista de serviços como CSV
   const handleDownloadCSV = () => {
-    const header = ["ID Serviço", "Nome do Serviço", "Descrição", "Categoria", "Valor"];
+    const header = ["ID Serviço", "Nome", "Descrição", "Categoria", "Valor"];
     const rows = servicos.map(servico => [
       servico.idServico,
       servico.nome,
@@ -74,6 +69,7 @@ const TabelaServicos: React.FC = () => {
     document.body.removeChild(link);
   };
 
+  // Modal de edição
   const openEditModal = (servico: Servico) => {
     setCurrentServico(servico);
     setIsModalOpen(true);
@@ -91,28 +87,17 @@ const TabelaServicos: React.FC = () => {
   const handleEditSave = async () => {
     if (currentServico) {
       try {
-        const response = await fetch(`http://meuprojeto.link/mecanica-agil/api/servico/update/${currentServico.idServico}`, {
+        const response = await fetch(`/api/servico/update/${currentServico.idServico}`, {
           method: 'PUT',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            nome: currentServico.nome,
-            descricao: currentServico.descricao,
-            categoria: currentServico.categoria,
-            valor: currentServico.valor,
-          }),
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(currentServico),
         });
-        if (!response.ok) {
-          throw new Error('Erro ao atualizar o serviço');
-        }
-
+        if (!response.ok) throw new Error('Erro ao atualizar o serviço');
         setServicos(servicos.map(servico => servico.idServico === currentServico.idServico ? currentServico : servico));
         setIsModalOpen(false);
         setCurrentServico(null);
       } catch (error) {
         setError('Falha ao atualizar o serviço');
-        console.error(error);
       }
     }
   };
@@ -123,14 +108,12 @@ const TabelaServicos: React.FC = () => {
         <p className="error">{error}</p>
       ) : (
         <>
-          <button onClick={handleDownloadCSV} className="download-button">
-            Baixar CSV
-          </button>
+          <button onClick={handleDownloadCSV} className="download-button">Baixar CSV</button>
           <table className="user-table">
             <thead>
               <tr>
                 <th>ID Serviço</th>
-                <th>Nome do Serviço</th>
+                <th>Nome</th>
                 <th>Descrição</th>
                 <th>Categoria</th>
                 <th>Valor</th>
@@ -146,12 +129,8 @@ const TabelaServicos: React.FC = () => {
                   <td>{servico.categoria}</td>
                   <td>{`R$ ${servico.valor.toFixed(2)}`}</td>
                   <td>
-                    <button onClick={() => openEditModal(servico)} className="edit-button">
-                      Editar
-                    </button>
-                    <button onClick={() => handleDelete(servico.idServico)} className="delete-button">
-                      Excluir
-                    </button>
+                    <button onClick={() => openEditModal(servico)} className="edit-button">Editar</button>
+                    <button onClick={() => handleDelete(servico.idServico)} className="delete-button">Excluir</button>
                   </td>
                 </tr>
               ))}
@@ -164,46 +143,22 @@ const TabelaServicos: React.FC = () => {
                 <h3>Editar Serviço</h3>
                 <label>
                   Nome:
-                  <input
-                    type="text"
-                    name="nome"
-                    value={currentServico.nome}
-                    onChange={handleEditChange}
-                  />
+                  <input type="text" name="nome" value={currentServico.nome} onChange={handleEditChange} />
                 </label>
                 <label>
                   Descrição:
-                  <input
-                    type="text"
-                    name="descricao"
-                    value={currentServico.descricao}
-                    onChange={handleEditChange}
-                  />
+                  <input type="text" name="descricao" value={currentServico.descricao} onChange={handleEditChange} />
                 </label>
                 <label>
                   Categoria:
-                  <input
-                    type="text"
-                    name="categoria"
-                    value={currentServico.categoria}
-                    onChange={handleEditChange}
-                  />
+                  <input type="text" name="categoria" value={currentServico.categoria} onChange={handleEditChange} />
                 </label>
                 <label>
                   Valor:
-                  <input
-                    type="number"
-                    name="valor"
-                    value={currentServico.valor}
-                    onChange={handleEditChange}
-                  />
+                  <input type="number" name="valor" value={currentServico.valor} onChange={handleEditChange} />
                 </label>
-                <button onClick={handleEditSave} className="save-button">
-                  Salvar
-                </button>
-                <button onClick={() => setIsModalOpen(false)} className="cancel-button">
-                  Cancelar
-                </button>
+                <button onClick={handleEditSave} className="save-button">Salvar</button>
+                <button onClick={() => setIsModalOpen(false)} className="cancel-button">Cancelar</button>
               </div>
             </div>
           )}
