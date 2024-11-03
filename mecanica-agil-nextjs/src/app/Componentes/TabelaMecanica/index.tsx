@@ -20,7 +20,7 @@ const TabelaMecanicas: React.FC = () => {
   useEffect(() => {
     const fetchMecanicas = async () => {
       try {
-        const response = await fetch('/api/proxy/mecanica/all');
+        const response = await fetch('http://meuprojeto.link/mecanica-agil/api/mecanica/all');
         if (!response.ok) {
           throw new Error('Erro ao buscar dados das mecânicas');
         }
