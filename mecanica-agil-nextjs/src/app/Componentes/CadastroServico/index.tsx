@@ -32,7 +32,7 @@ const CadastroServico: React.FC = () => {
         };
 
         try {
-            const response = await fetch('http://meuprojeto.link/mecanica-agil/api/servico/', {
+            const response = await fetch('/api/proxy/servico/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
