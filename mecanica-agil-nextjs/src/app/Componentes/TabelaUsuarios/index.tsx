@@ -21,7 +21,7 @@ const TabelaUsuarios: React.FC = () => {
   useEffect(() => {
     const fetchUsuarios = async () => {
       try {
-        const response = await fetch('http://meuprojeto.link/mecanica-agil/api/usuario/all'); // Ajuste o endpoint se necessário
+        const response = await fetch('/api/proxy/usuario/all'); // Ajuste o endpoint se necessário
         if (!response.ok) {
           throw new Error('Erro ao buscar dados dos usuários');
         }
