@@ -20,7 +20,7 @@ const TabelaMecanicas: React.FC = () => {
   useEffect(() => {
     const fetchMecanicas = async () => {
       try {
-        const response = await fetch('http://meuprojeto.link/mecanica-agil/api/mecanica/all');
+        const response = await fetch('/api/proxy/mecanica/all');
         if (!response.ok) {
           throw new Error('Erro ao buscar dados das mecânicas');
         }
@@ -37,7 +37,7 @@ const TabelaMecanicas: React.FC = () => {
 
   const handleDelete = async (id: number) => {
     try {
-      const response = await fetch(`http://meuprojeto.link/mecanica-agil/api/mecanica/delete/${id}`, {
+      const response = await fetch(`/api/proxy/mecanica/delete/${id}`, {
         method: 'DELETE',
       });
       if (!response.ok) {
@@ -90,7 +90,7 @@ const TabelaMecanicas: React.FC = () => {
   const handleEditSave = async () => {
     if (currentMecanica) {
       try {
-        const response = await fetch(`http://meuprojeto.link/mecanica-agil/api/mecanica/update/${currentMecanica.id}`, {
+        const response = await fetch(`/api/proxy/mecanica/update/${currentMecanica.id}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
