@@ -40,6 +40,7 @@ const TabelaServicos: React.FC = () => {
     try {
       const response = await fetch(`/api/proxy/servico/delete/${idServico}`, {
         method: 'DELETE',
+        mode : 'no-cors'
       });
       if (!response.ok) {
         throw new Error('Erro ao excluir o serviço');
