@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from 'react';
-import TabelaUsuarios from '../../../Componentes/Usuarios';
+import TabelaUsuarios from '../../../Componentes/TabelaUsuarios';
 import './style.css';
 
 const App: React.FC = () => {

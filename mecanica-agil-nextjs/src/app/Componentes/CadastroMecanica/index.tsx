@@ -32,7 +32,7 @@ const CadastroMecanica: React.FC = () => {
         };
 
         try {
-            const response = await fetch('http://localhost:8080/mecanica-agil/api/mecanica/', {
+            const response = await fetch('http://meuprojeto.link/mecanica-agil/api/mecanica/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

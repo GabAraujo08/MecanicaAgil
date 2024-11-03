@@ -21,7 +21,7 @@ const TabelaUsuarios: React.FC = () => {
   useEffect(() => {
     const fetchUsuarios = async () => {
       try {
-        const response = await fetch('http://localhost:8080/mecanica-agil/api/usuario/all'); // Ajuste o endpoint se necessário
+        const response = await fetch('http://meuprojeto.link/mecanica-agil/api/usuario/all'); // Ajuste o endpoint se necessário
         if (!response.ok) {
           throw new Error('Erro ao buscar dados dos usuários');
         }
@@ -38,7 +38,7 @@ const TabelaUsuarios: React.FC = () => {
 
   const handleDelete = async (cpf: string) => {
     try {
-      const response = await fetch(`http://localhost:8080/mecanica-agil/api/usuario/delete/${cpf}`, {
+      const response = await fetch(`http://meuprojeto.link/mecanica-agil/api/usuario/delete/${cpf}`, {
         method: 'DELETE',
       });
       if (!response.ok) {
@@ -102,7 +102,7 @@ const TabelaUsuarios: React.FC = () => {
   const handleEditSave = async () => {
     if (currentUsuario) {
       try {
-        const response = await fetch(`http://localhost:8080/mecanica-agil/api/usuario/update/${currentUsuario.cpf}`, {
+        const response = await fetch(`http://meuprojeto.link/mecanica-agil/api/usuario/update/${currentUsuario.cpf}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',

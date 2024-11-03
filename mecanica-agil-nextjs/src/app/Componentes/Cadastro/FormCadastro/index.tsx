@@ -35,7 +35,7 @@ const FormCadastro = () => {
     };
 
     try {
-      const response = await fetch('http://localhost:8080/mecanica-agil/api/usuario/', {
+      const response = await fetch('http://meuprojeto.link/mecanica-agil/api/usuario/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

@@ -21,7 +21,7 @@ const TabelaServicos: React.FC = () => {
   useEffect(() => {
     const fetchServicos = async () => {
       try {
-        const response = await fetch('http://localhost:8080/mecanica-agil/api/servico/all');
+        const response = await fetch('http://meuprojeto.link/mecanica-agil/api/servico/all');
         if (!response.ok) {
           throw new Error('Erro ao buscar dados dos serviços');
         }
@@ -38,7 +38,7 @@ const TabelaServicos: React.FC = () => {
 
   const handleDelete = async (idServico: number) => {
     try {
-      const response = await fetch(`http://localhost:8080/mecanica-agil/api/servico/delete/${idServico}`, {
+      const response = await fetch(`http://meuprojeto.link/mecanica-agil/api/servico/delete/${idServico}`, {
         method: 'DELETE',
       });
       if (!response.ok) {
@@ -91,7 +91,7 @@ const TabelaServicos: React.FC = () => {
   const handleEditSave = async () => {
     if (currentServico) {
       try {
-        const response = await fetch(`http://localhost:8080/mecanica-agil/api/servico/update/${currentServico.idServico}`, {
+        const response = await fetch(`http://meuprojeto.link/mecanica-agil/api/servico/update/${currentServico.idServico}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',

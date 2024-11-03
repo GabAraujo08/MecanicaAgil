@@ -23,7 +23,7 @@ const TabelaVeiculos: React.FC = () => {
   useEffect(() => {
     const fetchVeiculos = async () => {
       try {
-        const response = await fetch('http://localhost:8080/mecanica-agil/api/veiculo/all');
+        const response = await fetch('http://meuprojeto.link/mecanica-agil/api/veiculo/all');
         if (!response.ok) {
           throw new Error('Erro ao buscar dados dos veículos');
         }
@@ -40,7 +40,7 @@ const TabelaVeiculos: React.FC = () => {
 
   const handleDelete = async (placa: string) => {
     try {
-      const response = await fetch(`http://localhost:8080/mecanica-agil/api/veiculo/delete/${placa}`, {
+      const response = await fetch(`http://meuprojeto.link/mecanica-agil/api/veiculo/delete/${placa}`, {
         method: 'DELETE',
       });
       if (!response.ok) {
@@ -70,7 +70,7 @@ const TabelaVeiculos: React.FC = () => {
   const handleEditSave = async () => {
     if (currentVeiculo) {
       try {
-        const response = await fetch(`http://localhost:8080/mecanica-agil/api/veiculo/update/${currentVeiculo.placa}`, {
+        const response = await fetch(`http://meuprojeto.link/mecanica-agil/api/veiculo/update/${currentVeiculo.placa}`, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
