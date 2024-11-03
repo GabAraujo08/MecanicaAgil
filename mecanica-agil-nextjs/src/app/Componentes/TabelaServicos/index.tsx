@@ -21,7 +21,7 @@ const TabelaServicos: React.FC = () => {
   useEffect(() => {
     const fetchServicos = async () => {
       try {
-        const response = await fetch('/api/proxy/servico/all');
+        const response = await fetch('http://meuprojeto.link/mecanica-agil/api/servico/all');
         if (!response.ok) {
           throw new Error('Erro ao buscar dados dos serviços');
         }
